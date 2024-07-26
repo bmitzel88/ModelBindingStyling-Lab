@@ -11,12 +11,16 @@
     {
         <div class="col-md-4 mb-4">
             <div class="card">
+                <!-- Image of each printer-->
                 <img src="@item.PrinterImage" class="card-img-top" alt="@item.Title">
                 <div class="card-body">
+                    <!--Printer details-->
                     <h5 class="card-title">@item.Title</h5>
                     <p class="card-text">
                         <strong>SKU:</strong> @item.SKU<br>
+                        <!--Price formatted as currency-->
                         <strong>Price:</strong> @item.Price.ToString("C")<br>
+                        <!--Size of the printing area-->
                         <strong>Build Volume:</strong> @item.BuildVolume
                     </p>
                 </div>
